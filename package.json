@@ -1,0 +1,26 @@
+{
+  "name": "finallmsassigment",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/YuliyaMandr98/finalLMSAssigment.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/YuliyaMandr98/finalLMSAssigment/issues"
+  },
+  "homepage": "https://github.com/YuliyaMandr98/finalLMSAssigment#readme",
+  "devDependencies": {
+    "@playwright/test": "^1.53.0",
+    "@types/node": "^24.0.3",
+    "allure-playwright": "^3.2.2",
+    "dotenv": "^16.5.0",
+    "typescript": "^5.8.3"
+  }
+}
