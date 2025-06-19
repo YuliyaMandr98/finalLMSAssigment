@@ -9,15 +9,6 @@ export default defineConfig({
     forbidOnly: !!process.env.CI,
     retries: process.env.CI ? 2 : 0,
     workers: process.env.CI ? 1 : 1,
-    reporter: [
-        ['list'],
-        ['allure-playwright', {
-            outputFolder: 'allure-results',
-            detail: true,
-            suiteTitle: false,
-            environmentInfo: true,
-        }],
-    ],
     use: {
         baseURL: process.env.AMAZON_URL || 'https://www.amazon.com',
         trace: 'on-first-retry',
