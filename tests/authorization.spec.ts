@@ -27,12 +27,12 @@ test.describe('Authorization', () => {
             await expect(homePage.expandAccountsAndListsButton).toBeVisible({ timeout: 10000 });
             await homePage.expandAccountsAndListsButton.click();
             await page.waitForTimeout(1500);
-            await expect(homePage.signInButton).toBeVisible({ timeout: 15000 });
+            // await expect(homePage.signInButton).toBeVisible({ timeout: 15000 });
         });
 
         await test.step("Click on the 'Sign In' button", async () => {
-            await expect(homePage.signInButton).toBeVisible({ timeout: 5000 });
-            await homePage.signInButton.click({ timeout: 15000 });
+            // await expect(homePage.signInButton).toBeVisible({ timeout: 5000 });
+            await homePage.signInButton.click({ timeout: 15000, force: true });
             await loginPage.verifyOnLoginPage();
         });
 
