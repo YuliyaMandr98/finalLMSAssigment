@@ -26,7 +26,7 @@ export async function authorizeUser(page: Page): Promise<void> {
     await page.waitForTimeout(1500);
     await expect(homePage.signInButton).toBeVisible({ timeout: 15000 });
 
-    await expect(homePage.signInButton).toBeVisible({ timeout: 5000 });
+    // await expect(homePage.signInButton).toBeVisible({ timeout: 5000 });
     await homePage.signInButton.click({ timeout: 15000, force: true });
     await page.waitForURL('**/ap/signin*', { waitUntil: 'domcontentloaded' });
 

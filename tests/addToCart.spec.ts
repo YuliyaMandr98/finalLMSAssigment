@@ -21,11 +21,6 @@ test.describe('Add to Cart', () => {
             await homePage.verifyUserIsLoggedIn();
         });
 
-        // await test.step('Precondition: Clear cart', async () => {
-        //     await productPage.clearCart();
-        //     await expect(homePage.cartCountIcon).toHaveText('0');
-        // });
-
         await test.step('Precondition: Search for a product', async () => {
             await homePage.performSearch(PRODUCT_SEARCH_QUERY);
 
